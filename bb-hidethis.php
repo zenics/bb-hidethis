@@ -27,7 +27,7 @@ if(! class_exists ( 'CM_HideThis'))
     
     function add_hideThis_settings( $form, $id ) {
 
-      if ( 'module_advanced' === $id ) {
+    if ( 'module_advanced' === $id ) {
       
      $form[ 'sections' ][ 'visibility' ][ 'fields' ][ 'hider' ] = [
           'type'    => 'select',
