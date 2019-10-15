@@ -31,7 +31,7 @@ if(! class_exists ( 'CM_HideThis'))
       
      $form[ 'sections' ][ 'visibility' ][ 'fields' ][ 'hider' ] = [
           'type'    => 'select',
-          'label'   => 'Hide Something',
+          'label'   => 'Hide node(s) if post module empty?',
           'default' => 'false',
           'options'       => array(
             'false'      => __( 'No', 'fl-builder' ),
@@ -47,8 +47,8 @@ if(! class_exists ( 'CM_HideThis'))
 
           $form[ 'sections' ][ 'visibility' ][ 'fields' ][ 'wrapnode' ] = [
           'type'        => 'text',
-          'label'       => 'Wrapping Node id',
-          'description' => 'Node id of the Wrapping row or column',
+          'label'       => 'Node ID(s)',
+          'description' => 'Node id(s) of the row column or module. You can use multiple nodes on the page to hide them all. Just comma separate them!',
           'default'     => '',
         ];
         
